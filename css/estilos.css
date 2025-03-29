@@ -1,0 +1,110 @@
+/* Alternando o Box Model CSS 
+para evitar dificuldades com dimensões 
+(largura, altura, bordas e espaçamentos) */
+* { box-sizing: border-box; }
+
+/* Definindo um tamanho padrão/referência
+para uso com medida REM. */
+html { font-size: 14px; }
+
+/* Reset de espaçamento de alguns elementos */
+body, h1, h2, h3, p, figure, .menu { 
+    padding: 0;
+    margin: 0;
+}
+
+/* Tornando todas as imagens flexíveis */
+img { max-width: 100%; }
+
+body { 
+    font-family: 'Noto Sans', Verdana, Arial, sans-serif;
+
+    /* Importante declara mesmo que seja branco,
+    já que o padrão é transparente (pode causar
+    inconsistências quando exibido em aparelhos com modo noturno ativado). */
+    background-color: #fff;
+    
+    
+    /* Solução do rodapé (etapa 1) */
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Solução do rodapé (etapa 2) */
+main { flex: 1; }
+
+a { text-decoration: none; }
+
+h1 a {
+    background-color: rgb(20, 28, 145);
+    color: white;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+}
+
+h1 {
+    /* Google Fonts */
+    font-family: Raleway, sans-serif; 
+    font-weight: 800; 
+    font-size: 1.5rem;
+}
+
+header {
+    /* Tornando o cabeçalho fixo ao rolar a página. */
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    background-color: #473294; 
+    
+}
+
+header div { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+
+nav h2 a { 
+    color: black;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 1rem;
+
+}
+
+/* Versão 1: mais específica
+seletor por seletor */
+
+/* nav h2 a:hover,
+.menu a:hover { */
+
+/* Versão 2: valendo para qualquer tipo de link dentro do nav */
+nav a:hover, nav a:focus { 
+    background-color: rgb(42, 17, 131);
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin-right: 60px;
+}
+
+.menu li {
+    margin: 10px;
+}
+
+.menu a {
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+h1 {
+    margin-left: 60px;
+}
