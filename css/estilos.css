@@ -245,3 +245,23 @@ nav {
         grid-template-columns: 1fr;
     }
 }
+
+
+@media (min-width: 999px) {
+    .historia img {
+        width: 50%;
+        max-width: 100%;
+    }
+
+    .introducao h1, .formulas h2 {
+        padding: 2rem 0 0 0;
+
+    }
+
+    .container, .introducao, .historia, .formulas {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+    
+}

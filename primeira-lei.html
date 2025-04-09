@@ -1,73 +1,73 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeira Lei de Ohm</title>
-    <link rel="stylesheet" href="css/estilos.css">
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Primeira Lei de Ohm</title>
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
 
-    <header>
-        <nav>
-            <a class="logo" href="/">Entenda Ohm</a>
-            <div class="menu-mobile">
-                <div class="linha1"></div>
-                <div class="linha2"></div>
-                <div class="linha3"></div>
+        <header>
+            <nav>
+                <a class="logo" href="/">Entenda Ohm</a>
+                <div class="menu-mobile">
+                    <div class="linha1"></div>
+                    <div class="linha2"></div>
+                    <div class="linha3"></div>
+                </div>
+
+                <ul class="menu-listas">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="primeira-lei.html">1º Lei</a></li>
+                        <li><a href="segunda-lei.html">2º Lei</a></li>
+                        <li><a href="exemplos.html">Exemplos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="conteudo">
+                <h1>Primeira Lei de Ohm</h1>
+                <p>A Primeira Lei de Ohm estabelece que a corrente elétrica (I) é proporcional à tensão (V) e inversamente proporcional à resistência (R). Fórmula:</p>
+                <p class="formula"><strong>V = I × R</strong></p>
+
+                <ul>
+                    <li><strong>V</strong>: Tensão (volts)</li>
+                    <li><strong>I</strong>: Corrente elétrica (ampères)</li>
+                    <li><strong>R</strong>: Resistência (ohms)</li>
+                </ul>
+
+                <p>Se mantivermos a resistência constante, um aumento na tensão também aumentará a corrente. Essa lei é fundamental para entender circuitos simples do nosso dia a dia.</p>
+            </section>
+
+            <section class="simulador">
+                <h2>Simule visualmente a fórmula</h2>
+                <p>Altere os valores abaixo para observar como eles se relacionam com a fórmula <strong>V = I × R</strong>. <br><em>(não funcional ainda)</em></p>
+
+                <form class="form-grid">
+                    <div class="input-group">
+                        <label for="tensao">Tensão (V):</label>
+                        <input type="number" id="tensao" placeholder="Ex: 12">
+                    </div>
+                    <div class="input-group">
+                        <label for="corrente">Corrente (I):</label>
+                        <input type="number" id="corrente" placeholder="Ex: 2">
+                    </div>
+                    <div class="input-group">
+                        <label for="resistencia">Resistência (R):</label>
+                        <input type="number" id="resistencia" placeholder="Ex: 6">
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <p>&copy; 2025 Entenda Ohm. Todos os direitos reservados.</p>
             </div>
+        </footer>
 
-            <ul class="menu-listas">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="primeira-lei.html">1º Lei</a></li>
-                    <li><a href="segunda-lei.html">2º Lei</a></li>
-                    <li><a href="exemplos.html">Exemplos</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="container">
-        <section class="conteudo">
-            <h1>Primeira Lei de Ohm</h1>
-            <p>A Primeira Lei de Ohm estabelece que a corrente elétrica (I) é proporcional à tensão (V) e inversamente proporcional à resistência (R). Fórmula:</p>
-            <p class="formula"><strong>V = I × R</strong></p>
-
-            <ul>
-                <li><strong>V</strong>: Tensão (volts)</li>
-                <li><strong>I</strong>: Corrente elétrica (ampères)</li>
-                <li><strong>R</strong>: Resistência (ohms)</li>
-            </ul>
-
-            <p>Se mantivermos a resistência constante, um aumento na tensão também aumentará a corrente. Essa lei é fundamental para entender circuitos simples do nosso dia a dia.</p>
-        </section>
-
-        <section class="simulador">
-            <h2>Simule visualmente a fórmula</h2>
-            <p>Altere os valores abaixo para observar como eles se relacionam com a fórmula <strong>V = I × R</strong>. <br><em>(sem cálculos automáticos)</em></p>
-
-            <form class="form-grid">
-                <div class="input-group">
-                    <label for="tensao">Tensão (V):</label>
-                    <input type="number" id="tensao" placeholder="Ex: 12">
-                </div>
-                <div class="input-group">
-                    <label for="corrente">Corrente (I):</label>
-                    <input type="number" id="corrente" placeholder="Ex: 2">
-                </div>
-                <div class="input-group">
-                    <label for="resistencia">Resistência (R):</label>
-                    <input type="number" id="resistencia" placeholder="Ex: 6">
-                </div>
-            </form>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-container">
-            <p>&copy; 2025 Entenda Ohm. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="js/menu-responsivo.js"></script>
-</body>
-</html>
+        <script src="js/menu-responsivo.js"></script>
+    </body>
+    </html>
